@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -71,7 +71,13 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: {
+        hero: "url(/hero/hero-bg.png)",
+        hero_shape_1: "url(/hero/shape-1.svg)",
+        hero_shape_2_light: "url(/hero/shape-2-light.svg)",
+        hero_shape_2_dark: "url(/hero/shape-2-dark.svg)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

@@ -11,6 +11,8 @@ const ThemeToggler = () => {
 
   return (
     <Button
+      className="rounded-full"
+      size="icon"
       type="button"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >

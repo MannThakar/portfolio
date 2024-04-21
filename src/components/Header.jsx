@@ -24,14 +24,14 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 bg-white z-40 transition-all ${
+      className={`sticky top-0 z-40 transition-all ${
         header ? "py-4 shadow-lg dark:bg-accent" : "py-6 dark:bg-transparent"
-      } ${pathname === "/" && "bg-[#fef9f5]"}`}
+      } ${pathname === "/" ? "bg-[#fef9f5]" : "bg-white"}`}
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Logo />
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-4">
             <Nav
               containerStyles="hidden xl:flex items-center gap-4"
               linkStyles="relative transition-colors hover:text-primary"

@@ -27,7 +27,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
     <nav className={`${containerStyles}`}>
       {links.map((item, index) => (
         <Link
-          className={`capitalize ${linkStyles}`}
+          className={`capitalize transition-colors ${linkStyles}`}
           href={item.pathname}
           key={index}
         >
