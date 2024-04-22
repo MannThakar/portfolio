@@ -60,7 +60,11 @@
 }
 
 .h1 {
-  @apply text-6xl xl:text-7xl font-bold tracking-tight xl:leading-[80px];
+  @apply text-5xl xl:text-7xl font-bold tracking-tight xl:leading-[85px];
+}
+
+.description {
+  @apply text-lg font-light text-muted-foreground;
 }
 
 .badge {

@@ -1,5 +1,6 @@
-import { Facebook, Github, Instagram, Linkedin, Youtube } from "lucide-react";
 import Link from "next/link";
+
+import { Youtube, Linkedin, Github, Facebook, Instagram } from "lucide-react";
 
 const socials = [
   {
