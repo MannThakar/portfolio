@@ -17,7 +17,7 @@ import DevImg from "./DevImg";
 
 const Hero = () => {
   return (
-    <section className="relative bg-hero bg-no-repeat bg-cover bg-bottom pt-10 dark:bg-none">
+    <section className="relative bg-hero bg-no-repeat bg-cover bg-bottom mb-20 py-10 dark:bg-none">
       <div className="container mx-auto">
         <div className="lg:flex lg:justify-between lg:items-center lg:gap-10">
           <div className="max-w-[500px] flex flex-col items-center lg:items-start text-center lg:text-left mx-auto lg:mx-0">

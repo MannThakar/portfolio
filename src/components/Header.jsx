@@ -10,7 +10,7 @@ import MobileNav from "./MobileNav";
 import ThemeToggler from "./ThemeToggler";
 
 const Header = () => {
-  const [header, setHeader] = React.useState(false);
+  const [header, setHeader] = React.useState(true);
 
   React.useEffect(() => {
     const scrollY = window.addEventListener("scroll", () => {
