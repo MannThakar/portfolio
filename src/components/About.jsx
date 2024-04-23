@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+
+import { motion } from "framer-motion";
 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./ui/tabs";
 import { Separator } from "./ui/separator";
@@ -14,6 +18,11 @@ import {
 } from "lucide-react";
 
 import DevImg from "./DevImg";
+
+const tabContentVariants = {
+  hidden: { opacity: 0, y: 100 },
+  enter: { opacity: 1, y: 0, transition: { type: "tween" } },
+};
 
 const personalInfoData = [
   {
@@ -146,7 +155,10 @@ const About = () => {
               </TabsList>
               <div>
                 <TabsContent value="personal-info">
-                  <div className="space-y-5">
+                  <motion.div
+                    className="space-y-5"
+                    variants={tabContentVariants}
+                  >
                     <div className="space-y-5 text-center lg:text-left">
                       <h3 className="h3">
                         Unmatched Service Quality for Over 10 Years
@@ -158,8 +170,11 @@ const About = () => {
                       </p>
                     </div>
                     <div className="grid gap-5 sm:grid-cols-2">
-                      {personalInfoData.map((item) => (
-                        <div className="flex items-center gap-2.5 font-semibold">
+                      {personalInfoData.map((item, index) => (
+                        <div
+                          className="flex items-center gap-2.5 font-semibold"
+                          key={index}
+                        >
                           <span className="text-primary scale-110">
                             {item.icon}
                           </span>
@@ -167,16 +182,20 @@ const About = () => {
                         </div>
                       ))}
                     </div>
-                    <div className="space-y-1.5">
+                    <div>
                       <h4 className="h4 text-primary">Language Skills:</h4>
+                      <Separator className="my-4" />
                       <div className="font-medium">
                         English, French, Spanish, Italian
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </TabsContent>
                 <TabsContent value="qualification">
-                  <div className="space-y-5">
+                  <motion.div
+                    className="space-y-5"
+                    variants={tabContentVariants}
+                  >
                     <h3 className="h3 text-center lg:text-left">
                       My Awesome Journey
                     </h3>
@@ -192,11 +211,11 @@ const About = () => {
                         </div>
                         <div className="space-y-5">
                           {getData(qualificationData, "education").data.map(
-                            (item) => {
+                            (item, index) => {
                               const { university, qualification, years } = item;
 
                               return (
-                                <div className="group relative p-5">
+                                <div className="group relative p-5" key={index}>
                                   <div className="w-1 h-full absolute inset-0 bg-primary" />
                                   <span className="w-5 h-5 inline-block absolute top-0 -left-2 bg-primary rounded-full transition-all duration-500 ease-in-out group-hover:top-[calc(100%-20px)]" />
                                   <div className="flex flex-col text-sm font-semibold">
@@ -221,11 +240,11 @@ const About = () => {
                         </div>
                         <div className="space-y-5">
                           {getData(qualificationData, "experience").data.map(
-                            (item) => {
+                            (item, index) => {
                               const { company, role, years } = item;
 
                               return (
-                                <div className="group relative p-5">
+                                <div className="group relative p-5" key={index}>
                                   <div className="w-1 h-full absolute inset-0 bg-primary" />
                                   <span className="w-5 h-5 inline-block absolute top-0 -left-2 bg-primary rounded-full transition-all duration-500 ease-in-out group-hover:top-[calc(100%-20px)]" />
                                   <div className="flex flex-col text-sm font-semibold">
@@ -240,10 +259,13 @@ const About = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </TabsContent>
                 <TabsContent value="skills">
-                  <div className="space-y-5">
+                  <motion.div
+                    className="space-y-5"
+                    variants={tabContentVariants}
+                  >
                     <h3 className="h3 text-center lg:text-left">
                       Tools I Use Everyday
                     </h3>
@@ -282,7 +304,7 @@ const About = () => {
                         )}
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </TabsContent>
               </div>
             </Tabs>

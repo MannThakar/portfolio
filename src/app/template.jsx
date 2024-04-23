@@ -10,6 +10,9 @@ const variants = {
   },
   enter: {
     opacity: 1,
+    transition: {
+      when: "beforeChildren",
+    },
   },
 };
 
