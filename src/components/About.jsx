@@ -123,7 +123,7 @@ const About = () => {
   };
 
   return (
-    <section>
+    <section className="mb-32">
       <div className="container mx-auto">
         <div>
           <h2 className="section-title mb-10">About</h2>

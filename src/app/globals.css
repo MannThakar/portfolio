@@ -90,7 +90,7 @@
 }
 
 .description {
-  @apply text-lg font-medium text-muted-foreground;
+  @apply font-semibold text-muted-foreground lg:text-lg;
 }
 
 .badge {
