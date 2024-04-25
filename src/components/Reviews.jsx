@@ -62,7 +62,7 @@ const reviewsData = [
 
 const Reviews = () => {
   return (
-    <section>
+    <section className="mb-20">
       <div className="container mx-auto">
         <div className="space-y-10">
           <h2 className="section-title">Reviews</h2>
