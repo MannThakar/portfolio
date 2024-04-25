@@ -20,8 +20,8 @@ import {
 import DevImg from "./DevImg";
 
 const tabContentVariants = {
-  hidden: { opacity: 0, y: 100 },
-  enter: { opacity: 1, y: 0, transition: { type: "tween" } },
+  hidden: { opacity: 0, y: 50 },
+  enter: { opacity: 1, y: 0, transition: { type: "tween", duration: 0.5 } },
 };
 
 const personalInfoData = [
