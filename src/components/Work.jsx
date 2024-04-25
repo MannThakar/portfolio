@@ -52,7 +52,7 @@ const projectsData = [
 
 const Work = () => {
   return (
-    <section>
+    <section className="mb-20">
       <div className="container mx-auto">
         <div className="grid gap-2.5 lg:grid-cols-3">
           <div className="max-w-[350px] lg:max-w-full h-fit flex flex-col gap-5 text-center md:text-left bg-muted mx-auto lg:mx-0 p-5 rounded-md">
