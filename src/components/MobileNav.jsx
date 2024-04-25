@@ -12,7 +12,7 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button type="button" size="icon">
+        <Button size="icon" type="button">
           <Menu />
         </Button>
       </SheetTrigger>

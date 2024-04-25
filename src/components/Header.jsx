@@ -34,7 +34,7 @@ const Header = () => {
           <div className="flex items-center gap-4">
             <Nav
               containerStyles="hidden lg:flex items-center gap-4"
-              linkStyles="relative transition-colors hover:text-primary"
+              linkStyles="relative font-semibold transition-colors hover:text-primary"
               underlineStyles="w-full h-[3px] absolute top-full left-0 bg-primary rounded-sm"
             />
             <div className="lg:hidden">
