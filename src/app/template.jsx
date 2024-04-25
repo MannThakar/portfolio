@@ -33,7 +33,6 @@ export default function Template({ children }) {
         className="w-1 fixed top-0 right-0 bottom-0 bg-primary z-50 transition-all duration-700"
         style={{ transform: `translateY(${scroll - 100}%)` }}
       />
-      <div className="h-[1000px]"></div>
     </>
   );
 }
