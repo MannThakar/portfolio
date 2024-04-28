@@ -66,7 +66,7 @@ export default function Projects() {
             </TabsList>
             <TabsContent value={category}>
               <motion.div
-                className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3"
+                className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
                 variants={projectsVariants}
               >
                 {filteredProjectsData.map((item, index) => (
