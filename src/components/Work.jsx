@@ -49,7 +49,7 @@ export const projectsData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
   },
   {
-    category: "fullstack",
+    category: "full stack",
     demo: "/",
     github: "/",
     image: "/work/1.png",
@@ -58,7 +58,7 @@ export const projectsData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
   },
   {
-    category: "fullstack",
+    category: "full stack",
     demo: "/",
     github: "/",
     image: "/work/2.png",

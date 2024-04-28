@@ -13,7 +13,9 @@ import {
 import { SquareGanttChart, Blocks, Gem } from "lucide-react";
 
 const servicesVariants = {
+  hidden: { opacity: 0 },
   enter: {
+    opacity: 1,
     transition: {
       when: "beforeChildren",
       staggerChildren: 0.3,

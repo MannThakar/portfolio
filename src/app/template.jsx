@@ -12,6 +12,7 @@ const variants = {
     opacity: 1,
     transition: {
       when: "beforeChildren",
+      transition: { type: "linear", delay: 0.25, duration: 0.5 },
     },
   },
 };
@@ -21,12 +22,7 @@ export default function Template({ children }) {
 
   return (
     <>
-      <motion.main
-        variants={variants}
-        initial="hidden"
-        animate="enter"
-        transition={{ type: "linear", delay: 0.25, duration: 0.5 }}
-      >
+      <motion.main variants={variants} initial="hidden" animate="enter">
         {children}
       </motion.main>
       <span
