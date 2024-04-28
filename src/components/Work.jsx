@@ -11,9 +11,9 @@ import { Button } from "./ui/button";
 
 import ProjectCard from "./ProjectCard";
 
-const projectsData = [
+export const projectsData = [
   {
-    category: "Next.JS",
+    category: "next.JS",
     demo: "/",
     github: "/",
     image: "/work/1.png",
@@ -22,7 +22,7 @@ const projectsData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
   },
   {
-    category: "Next.JS",
+    category: "next.JS",
     demo: "/",
     github: "/",
     image: "/work/2.png",
@@ -31,7 +31,7 @@ const projectsData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
   },
   {
-    category: "React.JS",
+    category: "react.JS",
     demo: "/",
     github: "/",
     image: "/work/3.png",
@@ -40,10 +40,28 @@ const projectsData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
   },
   {
-    category: "React.JS",
+    category: "react.JS",
     demo: "/",
     github: "/",
-    image: "/work/3.png",
+    image: "/work/4.png",
+    title: "Solstice Website",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
+  },
+  {
+    category: "fullstack",
+    demo: "/",
+    github: "/",
+    image: "/work/1.png",
+    title: "Solstice Website",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
+  },
+  {
+    category: "fullstack",
+    demo: "/",
+    github: "/",
+    image: "/work/2.png",
     title: "Solstice Website",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",

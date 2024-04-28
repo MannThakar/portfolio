@@ -24,6 +24,8 @@ const tabContentVariants = {
   enter: { opacity: 1, y: 0, transition: { type: "tween", duration: 0.5 } },
 };
 
+const tabs = ["personal info", "qualifications", "skills"];
+
 const personalInfoData = [
   {
     icon: <User />,
@@ -132,29 +134,20 @@ const About = () => {
               containerStyles="hidden lg:inline-block max-w-[500px] h-[500px] bg-about_shape_light bg-no-repeat bg-contain bg-bottom dark:bg-about_shape_dark"
               imgSrc="/about/developer.png"
             />
-            <Tabs defaultValue="personal-info">
+            <Tabs defaultValue="personal info">
               <TabsList className="h-fit grid justify-stretch gap-1.5 bg-transparent mb-10 sm:grid-cols-3 sm:bg-muted sm:rounded-full">
-                <TabsTrigger
-                  className="font-bold py-3 rounded-full data-[state=active]:text-primary-foreground data-[state=active]:bg-primary"
-                  value="personal-info"
-                >
-                  Personal Info
-                </TabsTrigger>
-                <TabsTrigger
-                  className="font-bold py-3 rounded-full data-[state=active]:text-primary-foreground data-[state=active]:bg-primary"
-                  value="qualification"
-                >
-                  Qualification
-                </TabsTrigger>
-                <TabsTrigger
-                  className="font-bold py-3 rounded-full data-[state=active]:text-primary-foreground data-[state=active]:bg-primary"
-                  value="skills"
-                >
-                  Skills
-                </TabsTrigger>
+                {tabs.map((item, index) => (
+                  <TabsTrigger
+                    className="font-semibold capitalize py-3 rounded-full data-[state=active]:text-primary-foreground data-[state=active]:bg-primary"
+                    value={item}
+                    key={index}
+                  >
+                    {item}
+                  </TabsTrigger>
+                ))}
               </TabsList>
               <div>
-                <TabsContent value="personal-info">
+                <TabsContent value="personal info">
                   <motion.div
                     className="space-y-5"
                     variants={tabContentVariants}
@@ -191,7 +184,7 @@ const About = () => {
                     </div>
                   </motion.div>
                 </TabsContent>
-                <TabsContent value="qualification">
+                <TabsContent value="qualifications">
                   <motion.div
                     className="space-y-5"
                     variants={tabContentVariants}

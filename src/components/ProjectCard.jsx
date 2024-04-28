@@ -16,7 +16,9 @@ import { Link as LinkIcon, Github } from "lucide-react";
 const ProjectCard = ({ category, demo, github, image, title, description }) => {
   return (
     <Card className="group relative">
-      <Badge className="absolute -top-4 -left-6 text-lg z-10">{category}</Badge>
+      <Badge className="absolute -top-4 -left-6 text-lg capitalize z-10">
+        {category}
+      </Badge>
       <CardHeader className="relative bg-primary/20 mb-5 pb-0 overflow-hidden dark:bg-accent">
         <div className="flex items-center gap-2.5 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
           <Link href={demo}>
