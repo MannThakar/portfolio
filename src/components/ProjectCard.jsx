@@ -20,10 +20,10 @@ const ProjectCard = ({ category, demo, github, image, title, description }) => {
         {category}
       </Badge>
       <CardHeader className="relative bg-primary/20 mb-5 pb-0 overflow-hidden dark:bg-accent">
-        <div className="flex items-center gap-2.5 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+        <div className="flex items-center gap-2.5 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10">
           <Link href={demo}>
             <Button
-              className="w-fit h-fit p-2.5 rounded-full opacity-0 scale-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
+              className="w-fit h-fit p-2.5 rounded-full opacity-0 scale-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               variant="secondary"
               size="icon"
               type="button"
@@ -33,7 +33,7 @@ const ProjectCard = ({ category, demo, github, image, title, description }) => {
           </Link>
           <Link href={github}>
             <Button
-              className="w-fit h-fit p-2.5 rounded-full opacity-0 scale-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
+              className="w-fit h-fit p-2.5 rounded-full opacity-0 scale-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               variant="secondary"
               size="icon"
               type="button"
@@ -42,14 +42,16 @@ const ProjectCard = ({ category, demo, github, image, title, description }) => {
             </Button>
           </Link>
         </div>
-        <Image
-          className="mx-auto shadow-2xl"
-          src={image}
-          width={300}
-          height={250}
-          priority
-          alt={title}
-        />
+        <div className="w-[250px] h-[250px] object-contain relative mx-auto">
+          <Image
+            className="shadow-2xl"
+            src={image}
+            fill
+            sizes="100%"
+            priority
+            alt={title}
+          />
+        </div>
       </CardHeader>
       <CardContent>
         <CardTitle className="h3">{title}</CardTitle>

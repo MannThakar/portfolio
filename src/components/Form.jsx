@@ -6,7 +6,7 @@ import { User, Mail } from "lucide-react";
 
 const Form = () => {
   return (
-    <from className="space-y-5" novalidate>
+    <form className="space-y-5">
       <div className="relative">
         <Input
           className="rounded-full"
@@ -37,7 +37,7 @@ const Form = () => {
       <Button className="w-full font-semibold" type="submit">
         Let's Work
       </Button>
-    </from>
+    </form>
   );
 };
 

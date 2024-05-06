@@ -20,7 +20,7 @@ const links = [
   },
 ];
 
-const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
+const Nav = ({ containerStyles, linkStyles, underlineStyles, layoutId }) => {
   const pathname = usePathname();
 
   return (
@@ -34,7 +34,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
           {pathname === item.pathname && (
             <motion.span
               className={`${underlineStyles}`}
-              layoutId="underline"
+              layoutId={layoutId}
               initial={{ y: "-100%" }}
               animate={{ y: 0 }}
               transition={{ type: "tween" }}

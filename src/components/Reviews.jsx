@@ -3,16 +3,16 @@
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
 import {
   Card,
-  CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
+  CardContent,
+  CardDescription,
 } from "./ui/card";
 
 const reviewsData = [
@@ -67,18 +67,25 @@ const Reviews = () => {
         <div className="space-y-10">
           <h2 className="section-title">Reviews</h2>
           <Swiper
+            className="max-w-[450px] md:max-w-full mx-auto md:mx-0"
             style={{ paddingBottom: "50px" }}
             slidesPerView={1}
             breakpoints={{
-              640: {
+              768: {
                 slidesPerView: 2,
               },
-              768: {
+              1024: {
                 slidesPerView: 3,
               },
             }}
-            spaceBetween={35}
-            modules={[Pagination]}
+            spaceBetween={25}
+            loop={true}
+            modules={[Autoplay, Pagination]}
+            autoplay={{
+              delay: 2500,
+              pauseOnMouseEnter: true,
+              disableOnInteraction: false,
+            }}
             pagination={{ clickable: true }}
           >
             {reviewsData.map((item, index) => (
@@ -86,15 +93,20 @@ const Reviews = () => {
                 <Card className="bg-primary/5 dark:bg-accent">
                   <CardHeader className="pb-2.5">
                     <div className="flex items-center gap-2.5">
-                      <Image
-                        className="rounded-full"
-                        src={item.avatar}
-                        width={59}
-                        height={50}
-                        alt={item.name}
-                      />
+                      <div className="w-14 h-14 relative">
+                        <Image
+                          className="rounded-full"
+                          src={item.avatar}
+                          fill
+                          sizes="100%"
+                          priority
+                          alt={item.name}
+                        />
+                      </div>
                       <div>
-                        <CardTitle className="h3">{item.name}</CardTitle>
+                        <CardTitle className="h3 whitespace-nowrap">
+                          {item.name}
+                        </CardTitle>
                         <span className="font-semibold">{item.job}</span>
                       </div>
                     </div>

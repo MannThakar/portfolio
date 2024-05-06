@@ -1,8 +1,14 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 import Socials from "./Socials";
 
 const Footer = () => {
+  const pathname = usePathname();
+
   return (
-    <footer className="text-secondary bg-secondary-foreground py-10">
+    <footer className={`py-10 ${pathname !== "/" && "bg-accent"}`}>
       <div className="container mx-auto">
         <div className="flex flex-col items-center gap-5">
           <Socials

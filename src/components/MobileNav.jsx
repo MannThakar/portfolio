@@ -21,7 +21,7 @@ const MobileNav = () => {
           <Logo />
           <Nav
             containerStyles="flex flex-col items-center gap-5"
-            linkStyles="text-xl font-medium transition-colors hover:text-primary"
+            linkStyles="text-xl font-semibold transition-colors hover:text-primary"
           />
         </div>
         <Socials

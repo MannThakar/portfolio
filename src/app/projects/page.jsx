@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
-import { projectsData } from "@/components/Work";
+import { projects } from "@/components/Work";
 
 import ProjectCard from "@/components/ProjectCard";
 
@@ -34,16 +34,16 @@ const projectVariants = {
 
 const projectCategories = [
   "all projects",
-  ...new Set(projectsData.map((item) => item.category)),
+  ...new Set(projects.map((item) => item.category)),
 ];
 
 export default function Projects() {
   const [category, setCategory] = React.useState("all projects");
 
-  const filteredProjectsData = projectsData.filter((item) => {
-    return category === "all projects"
-      ? projectsData
-      : item.category === category;
+  let filteredProjects = [];
+
+  filteredProjects = projects.filter((item) => {
+    return category === "all projects" ? projects : item.category === category;
   });
 
   return (
@@ -52,7 +52,7 @@ export default function Projects() {
         <div className="space-y-5">
           <h1 className="section-title !justify-center">Projects</h1>
           <Tabs defaultValue={category}>
-            <TabsList className="max-w-[300px] h-fit flex justify-start items-center gap-2.5 mx-auto mb-14 rounded-full overflow-y-hidden overflow-x-auto sm:max-w-fit">
+            <TabsList className="max-w-[250px] h-fit flex justify-start items-center gap-2.5 mx-auto mb-14 rounded-full overflow-y-hidden overflow-x-auto sm:max-w-fit">
               {projectCategories.map((item, index) => (
                 <TabsTrigger
                   className="font-semibold capitalize py-3 rounded-full data-[state=active]:text-primary-foreground data-[state=active]:bg-primary"
@@ -66,10 +66,10 @@ export default function Projects() {
             </TabsList>
             <TabsContent value={category}>
               <motion.div
-                className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+                className="max-w-[450px] md:max-w-full grid gap-6 md:grid-cols-2 lg:grid-cols-3 mx-auto md:mx-0"
                 variants={projectsVariants}
               >
-                {filteredProjectsData.map((item, index) => (
+                {filteredProjects.map((item, index) => (
                   <motion.div variants={projectVariants} key={index}>
                     <ProjectCard {...item} />
                   </motion.div>

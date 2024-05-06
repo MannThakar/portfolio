@@ -51,21 +51,21 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className="mb-32">
+    <section className="mb-20 md:mb-32">
       <div className="container mx-auto">
-        <div className="space-y-24">
+        <div className="space-y-20">
           <h2 className="section-title">Services</h2>
           <motion.div
-            className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-14 sm:grid-cols-2 lg:grid-cols-3"
             variants={servicesVariants}
           >
             {servicesData.map((item, index) => (
               <motion.div variants={serviceVariants} key={index}>
                 <Card className="group relative pt-14 rounded-xl">
-                  <CardHeader className="absolute -top-9 left-1/2 text-primary p-0 -translate-x-1/2 transition-all duration-500 group-hover:scale-[1.25] group-hover:-rotate-6">
+                  <CardHeader className="absolute -top-9 left-1/2 text-primary p-0 -translate-x-1/2 transition-all duration-500 group-hover:-rotate-6 group-hover:scale-125">
                     {item.icon}
                   </CardHeader>
-                  <CardContent className="space-y-2.5 text-center">
+                  <CardContent className="space-y-1.5 text-center">
                     <CardTitle className="h3">{item.title}</CardTitle>
                     <CardDescription className="description">
                       {item.description}

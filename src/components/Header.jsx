@@ -10,7 +10,7 @@ import MobileNav from "./MobileNav";
 import ThemeToggler from "./ThemeToggler";
 
 const Header = () => {
-  const [header, setHeader] = React.useState(true);
+  const [header, setHeader] = React.useState(false);
 
   React.useEffect(() => {
     const scrollY = window.addEventListener("scroll", () => {
@@ -31,13 +31,14 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Logo />
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5">
             <Nav
-              containerStyles="hidden lg:flex items-center gap-4"
+              containerStyles="hidden md:flex items-center gap-5"
               linkStyles="relative font-semibold transition-colors hover:text-primary"
               underlineStyles="w-full h-[3px] absolute top-full left-0 bg-primary rounded-sm"
+              layoutId="underline"
             />
-            <div className="lg:hidden">
+            <div className="md:hidden">
               <MobileNav />
             </div>
             <ThemeToggler />

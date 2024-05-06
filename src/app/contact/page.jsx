@@ -4,7 +4,7 @@ import Form from "@/components/Form";
 
 export default function Contact() {
   return (
-    <section className="my-12 md:my-24">
+    <section className="my-10 md:my-20">
       <div className="container mx-auto">
         <div className="space-y-10 md:space-y-20">
           <div className="md:grid md:grid-cols-2 md:gap-10">

@@ -4,23 +4,23 @@ import { Youtube, Linkedin, Github, Facebook, Instagram } from "lucide-react";
 
 const socials = [
   {
-    pathname: "",
+    pathname: "/",
     icon: <Youtube />,
   },
   {
-    pathname: "",
+    pathname: "/",
     icon: <Linkedin />,
   },
   {
-    pathname: "",
+    pathname: "/",
     icon: <Github />,
   },
   {
-    pathname: "",
+    pathname: "/",
     icon: <Facebook />,
   },
   {
-    pathname: "",
+    pathname: "/",
     icon: <Instagram />,
   },
 ];

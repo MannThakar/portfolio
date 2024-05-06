@@ -22,11 +22,16 @@ export default function Template({ children }) {
 
   return (
     <>
-      <motion.main variants={variants} initial="hidden" animate="enter">
+      <motion.main
+        className="flex-1"
+        variants={variants}
+        initial="hidden"
+        animate="enter"
+      >
         {children}
       </motion.main>
       <span
-        className="w-1 fixed top-0 right-0 bottom-0 bg-primary z-50 transition-all duration-700"
+        className="w-1 fixed top-0 right-0 bottom-0 bg-primary z-50 transition-all duration-700 ease-in-out"
         style={{ transform: `translateY(${scroll - 100}%)` }}
       />
     </>
