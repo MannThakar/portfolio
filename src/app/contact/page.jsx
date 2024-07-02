@@ -15,7 +15,7 @@ export default function Contact() {
                   Say Hello 👋
                 </span>
               </div>
-              <h1 className="h1">Let's Work Together.</h1>
+              <h1 className="h1">Let&apos;s Work Together.</h1>
               <p className="description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptates animi ipsum sequi iusto atque error debitis enim

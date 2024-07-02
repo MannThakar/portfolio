@@ -35,7 +35,7 @@ const Form = () => {
         placeholder="Type your Message Here"
       />
       <Button className="w-full font-semibold" type="submit">
-        Let's Work
+        Let&apos;s Work
       </Button>
     </form>
   );

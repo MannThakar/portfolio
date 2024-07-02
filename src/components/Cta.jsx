@@ -8,7 +8,7 @@ const Cta = () => {
       <div className="container mx-auto">
         <div className="max-w-[500px] flex flex-col items-center gap-5 mx-auto">
           <h2 className="h2 text-center">
-            Prepared to turn tour ideas into reality? I'm here to help you
+            Prepared to turn tour ideas into reality? I&apos;m here to help you
           </h2>
           <Link href="/contact">
             <Button className="text-xl font-semibold py-6 px-8" type="button">
