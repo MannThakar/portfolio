@@ -153,7 +153,7 @@ const About = () => {
                     Conversion-Ready Interfaces
                   </h3>
                   <p className="description max-w-[500px] mx-auto lg:mx-0">
-                    I'm a freelance React & Next.js developer focused on
+                    I&apos;m a freelance React & Next.js developer focused on
                     building fast, clean, and conversion-friendly web
                     interfaces. With experience in SaaS, dashboards, and
                     AI-driven platforms.
