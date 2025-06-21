@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 
 import { Link as LinkIcon, Github } from "lucide-react";
 
-const ProjectCard = ({ category, demo, github, image, title, description }) => {
+const ProjectCard = ({ category, demo, image, title, description }) => {
   return (
     <Card className="group relative">
       <Badge className="absolute -top-2.5 -left-2.5 capitalize z-10">
@@ -21,26 +21,18 @@ const ProjectCard = ({ category, demo, github, image, title, description }) => {
       </Badge>
       <CardHeader className="relative bg-primary/20 mb-5 pb-0 overflow-hidden dark:bg-accent">
         <div className="flex items-center gap-2.5 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10">
-          <Link href={demo}>
-            <Button
-              className="w-fit h-fit p-2.5 rounded-full opacity-0 scale-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100"
-              variant="secondary"
-              size="icon"
-              type="button"
-            >
-              <LinkIcon size={35} />
-            </Button>
-          </Link>
-          <Link href={github}>
-            <Button
-              className="w-fit h-fit p-2.5 rounded-full opacity-0 scale-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100"
-              variant="secondary"
-              size="icon"
-              type="button"
-            >
-              <Github size={35} />
-            </Button>
-          </Link>
+          {demo && (
+            <Link href={demo} target="_blank" rel="noopener noreferrer">
+              <Button
+                className="w-fit h-fit p-2.5 rounded-full opacity-0 scale-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+                variant="secondary"
+                size="icon"
+                type="button"
+              >
+                <LinkIcon size={35} />
+              </Button>
+            </Link>
+          )}
         </div>
         <div className="w-[250px] h-[250px] object-contain relative mx-auto">
           <Image

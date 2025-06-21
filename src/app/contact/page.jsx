@@ -17,9 +17,8 @@ export default function Contact() {
               </div>
               <h1 className="h1">Let&apos;s Work Together.</h1>
               <p className="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates animi ipsum sequi iusto atque error debitis enim
-                neque, velit ullam.
+                Have a project in mind, need a frontend expert <br /> or just
+                want to say hello?
               </p>
             </div>
             <div className="hidden md:inline-block bg-contact_illustration_light bg-no-repeat bg-contain bg-center dark:bg-contact_illustration_dark" />
@@ -28,15 +27,15 @@ export default function Contact() {
             <div className="space-y-5">
               <div className="flex items-center gap-2.5 font-semibold">
                 <Mail className="text-primary" />
-                youremail@email.com
+                mannthakar505@gmail.com
               </div>
               <div className="flex items-center gap-2.5 font-semibold">
                 <Home className="text-primary" />
-                8420 Pine Avenue, Meadowville MC 842
+                Ahmedabad, India
               </div>
               <div className="flex items-center gap-2.5 font-semibold">
                 <PhoneCall className="text-primary" />
-                +44 123 546 7890
+                +91 82008 73635
               </div>
             </div>
             <Form />

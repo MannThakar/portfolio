@@ -11,10 +11,10 @@ import {
   User,
   PhoneCall,
   Mail,
-  Calendar,
   GraduationCap,
   Home,
   BriefcaseBusiness,
+  Laptop,
 } from "lucide-react";
 
 import DevImg from "./DevImg";
@@ -29,27 +29,27 @@ const tabs = ["personal info", "qualifications", "skills"];
 const personalInfoData = [
   {
     icon: <User />,
-    text: "Ryan Davis",
+    text: "Mann Thakar",
   },
   {
     icon: <PhoneCall />,
-    text: "+000 000 0000",
+    text: "+91 82008 73635",
   },
   {
     icon: <Mail />,
-    text: "youremail@email.com",
+    text: "mannthakar505@gmail.com",
   },
   {
-    icon: <Calendar />,
-    text: "Born on 10 Mar, 1998",
+    icon: <Laptop />,
+    text: "Full Stack Developer",
   },
   {
     icon: <GraduationCap />,
-    text: "Master on Computer Science",
+    text: "Bechelor of Computer Science",
   },
   {
     icon: <Home />,
-    text: "321 Blue Avenue, NY, USA",
+    text: "Ahmedabad, India",
   },
 ];
 
@@ -59,19 +59,14 @@ const qualificationData = [
     title: "education",
     data: [
       {
-        university: "Example University",
-        qualification: "Bachelor of Science",
-        years: "2015 - 2018",
+        university: "Darshan University",
+        qualification: "Bachelor of Computer Science",
+        years: "2021 - 2024",
       },
       {
-        university: "Another University",
-        qualification: "Master of Art",
-        years: "2019 - 2021",
-      },
-      {
-        university: "Yet Another University",
-        qualification: "Ph.D in Computer Science",
-        years: "2021 - 2023",
+        university: "Government Polytechnic",
+        qualification: "Diploma In Computer Science",
+        years: "2018 - 2021",
       },
     ],
   },
@@ -80,19 +75,14 @@ const qualificationData = [
     title: "experience",
     data: [
       {
-        company: "ABC Inc.",
-        role: "Software Engineer",
-        years: "2018 - 2020",
+        company: "MindInventory",
+        role: "Full Stack Developer",
+        years: "2024 - 2025",
       },
       {
-        company: "XYZ Corporation",
-        role: "Senior Developer",
-        years: "2020 - 2022",
-      },
-      {
-        company: "Tech Innovators",
-        role: "Lead Developers",
-        years: "2022 - Present",
+        company: "7Span",
+        role: "Front-End Developer",
+        years: "2023 - 2024",
       },
     ],
   },
@@ -102,10 +92,20 @@ const skillsInfo = [
   {
     title: "skills",
     data: [
-      "HTML & CSS",
-      "Front-End Development",
-      "JavaScript, PHP",
-      "Back-End Development",
+      "React.js",
+      "Next.js",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "Tailwind CSS",
+      "Git & GitHub",
+      "RESTful APIs",
+      "Agile Methodologies",
+      "UI/UX Design",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "SQL",
+      "HTML & CSS (Responsive Design)",
     ],
   },
   {
@@ -149,12 +149,14 @@ const About = () => {
               <motion.div variants={tabContentVariants}>
                 <div className="space-y-5 text-center lg:text-left">
                   <h3 className="h3">
-                    Unmatched Service Quality for Over 10 Years
+                    Freelance React & Next.js Specialist | Crafting Clean,
+                    Conversion-Ready Interfaces
                   </h3>
                   <p className="description max-w-[500px] mx-auto lg:mx-0">
-                    I specialize in crafting intuitive websites with
-                    cutting-edge technology, delivering dynamic and engaging
-                    user experience.
+                    I'm a freelance React & Next.js developer focused on
+                    building fast, clean, and conversion-friendly web
+                    interfaces. With experience in SaaS, dashboards, and
+                    AI-driven platforms.
                   </p>
                 </div>
                 <div className="grid gap-5 my-10 sm:grid-cols-2">
@@ -169,13 +171,6 @@ const About = () => {
                       {item.text}
                     </div>
                   ))}
-                </div>
-                <div>
-                  <h4 className="h4 text-primary">Language Skills:</h4>
-                  <Separator className="my-2.5" />
-                  <div className="font-medium">
-                    English, French, Spanish, Italian
-                  </div>
                 </div>
               </motion.div>
             </TabsContent>

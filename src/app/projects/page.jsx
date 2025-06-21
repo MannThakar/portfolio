@@ -52,7 +52,7 @@ export default function Projects() {
         <div className="space-y-5">
           <h1 className="section-title !justify-center">Projects</h1>
           <Tabs defaultValue={category}>
-            <TabsList className="max-w-[250px] h-fit flex justify-start items-center gap-2.5 mx-auto mb-14 rounded-full overflow-y-hidden overflow-x-auto sm:max-w-fit">
+            <TabsList className=" h-fit flex justify-start items-center gap-2.5 mx-auto mb-14 rounded-full overflow-y-hidden overflow-x-auto sm:max-w-fit">
               {projectCategories.map((item, index) => (
                 <TabsTrigger
                   className="font-semibold capitalize py-3 rounded-full data-[state=active]:text-primary-foreground data-[state=active]:bg-primary"

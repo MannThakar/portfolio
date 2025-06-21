@@ -20,16 +20,25 @@ const links = [
   },
 ];
 
-const Nav = ({ containerStyles, linkStyles, underlineStyles, layoutId }) => {
+const Nav = ({
+  containerStyles,
+  linkStyles,
+  underlineStyles,
+  layoutId,
+  onLinkClick,
+}) => {
   const pathname = usePathname();
 
   return (
     <nav className={`${containerStyles}`}>
-      {links.map((item, index) => (
+      {links?.map((item, index) => (
         <Link
           className={`capitalize ${linkStyles}`}
-          href={item.pathname}
+          href={item?.pathname}
           key={index}
+          data-active={pathname === item.pathname ? "true" : "false"}
+          data-testid={`nav-link-${item.label}`}
+          onClick={onLinkClick}
         >
           {pathname === item.pathname && (
             <motion.span
@@ -40,7 +49,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles, layoutId }) => {
               transition={{ type: "tween" }}
             />
           )}
-          {item.label}
+          {item?.label}
         </Link>
       ))}
     </nav>

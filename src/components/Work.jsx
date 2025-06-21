@@ -13,58 +13,36 @@ import ProjectCard from "./ProjectCard";
 
 export const projects = [
   {
-    category: "next.JS",
-    demo: "/",
-    github: "/",
-    image: "/work/1.png",
-    title: "Evolve Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
-  },
-  {
-    category: "next.JS",
-    demo: "/",
-    github: "/",
+    category: "Next.JS",
+    demo: "https://tattooadda-productionss-git-master-mannthakars-projects.vercel.app/",
     image: "/work/2.png",
-    title: "Lumina Website",
+    title: "TattooAdda",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
+      "A modern, stylish website for a tattoo studio built with Next.js and Tailwind CSS, featuring smooth UI and mobile-first design.",
   },
   {
-    category: "react.JS",
-    demo: "/",
-    github: "/",
+    category: "React.JS",
+    demo: "https://vivid-affairs.vercel.app/",
+    image: "/work/1.png",
+    title: "Vivid Affairs",
+    description:
+      "Vivid Affairs – A vibrant event planning website designed to reflect elegance, culture, and creativity with seamless UX and expressive visuals.",
+  },
+  {
+    category: "Next.JS",
+    demo: "https://tattooadda-productionss-git-master-mannthakars-projects.vercel.app/artschool",
     image: "/work/3.png",
-    title: "Nexa Website",
+    title: "Art School",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
+      "Art School – A creative website for an art institution, showcasing visual arts and design programs with an elegant and educational interface.",
   },
   {
-    category: "react.JS",
-    demo: "/",
-    github: "/",
+    category: "Full Stack",
+    demo: "",
     image: "/work/4.png",
-    title: "Solstice Website",
+    title: "E-commerce",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
-  },
-  {
-    category: "full stack",
-    demo: "/",
-    github: "/",
-    image: "/work/1.png",
-    title: "Solstice Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
-  },
-  {
-    category: "full stack",
-    demo: "/",
-    github: "/",
-    image: "/work/2.png",
-    title: "Solstice Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, et.",
+      "E-Commerce Store – A sleek and responsive online shopping platform built for performance and a secure checkout process.",
   },
 ];
 
@@ -76,8 +54,8 @@ const Work = () => {
           <div className="max-w-[350px] lg:max-w-full h-fit flex flex-col gap-5 text-center md:text-left bg-muted mx-auto lg:mx-0 p-5 rounded-md">
             <h2 className="section-title">Latest Projects</h2>
             <p className="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
-              ratione.
+              Developed responsive, high-performance web apps with real-time
+              features and clean UI using React & Next.js
             </p>
             <Link href="/projects">
               <Button

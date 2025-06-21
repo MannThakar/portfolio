@@ -17,7 +17,7 @@ const Footer = () => {
           />
           <p className="text-sm font-semibold">
             Copyright &copy;{" "}
-            <span className="font-bold text-primary">Ryan Davis</span>. All
+            <span className="font-bold text-primary">Mann Thakar</span>. All
             rights reserved.
           </p>
         </div>

@@ -4,15 +4,11 @@ import { Youtube, Linkedin, Github, Facebook, Instagram } from "lucide-react";
 
 const socials = [
   {
-    pathname: "/",
-    icon: <Youtube />,
-  },
-  {
-    pathname: "/",
+    pathname: "https://www.linkedin.com/in/mann-thakar/",
     icon: <Linkedin />,
   },
   {
-    pathname: "/",
+    pathname: "https://github.com/MannThakar",
     icon: <Github />,
   },
   {
@@ -20,7 +16,7 @@ const socials = [
     icon: <Facebook />,
   },
   {
-    pathname: "/",
+    pathname: "/https://www.instagram.com/mannthakar_24/",
     icon: <Instagram />,
   },
 ];

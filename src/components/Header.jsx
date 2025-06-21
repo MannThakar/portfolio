@@ -29,8 +29,7 @@ const Header = () => {
       } ${pathname === "/" ? "bg-[#fef9f5]" : "bg-white"}`}
     >
       <div className="container mx-auto">
-        <div className="flex justify-between items-center">
-          <Logo />
+        <div className="flex justify-end items-center">
           <div className="flex items-center gap-5">
             <Nav
               containerStyles="hidden md:flex items-center gap-5"

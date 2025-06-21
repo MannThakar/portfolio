@@ -33,19 +33,19 @@ const servicesData = [
     icon: <SquareGanttChart size={75} strokeWidth={1.25} />,
     title: "Web Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio obcaecati eum modi incidunt?Cum, perferendis libero mollitia hic optio est accusamus delectus molestiae, ipsam rerum magni sapiente expedita et?",
+      "I craft clean, user-focused web designs that are visually engaging and conversion-ready. With a strong eye for detail and experience in UI systems like Shadcn and Tailwind, I turn ideas into intuitive, responsive interfaces that leave a lasting impression",
   },
   {
     icon: <Blocks size={75} strokeWidth={1.25} />,
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio obcaecati eum modi incidunt?Cum, perferendis libero mollitia hic optio est accusamus delectus molestiae, ipsam rerum magni sapiente expedita et?",
+      "I build fast, scalable websites using React and Next.js—focused on performance, SEO, and responsive design. Whether it's a dynamic dashboard or a high-converting landing page, I deliver clean, maintainable code that powers real business results.",
   },
   {
     icon: <Gem size={75} strokeWidth={1.25} />,
     title: "App Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio obcaecati eum modi incidunt?Cum, perferendis libero mollitia hic optio est accusamus delectus molestiae, ipsam rerum magni sapiente expedita et?",
+      "I develop responsive, high-performance web apps using React Native UI library. From dynamic forms to real-time dashboards, I deliver scalable, user-friendly solutions tailored to your business needs.",
   },
 ];
 
@@ -61,7 +61,7 @@ const Services = () => {
           >
             {servicesData.map((item, index) => (
               <motion.div variants={serviceVariants} key={index}>
-                <Card className="group relative pt-14 rounded-xl">
+                <Card className="group relative pt-14 rounded-xl border-none">
                   <CardHeader className="absolute -top-9 left-1/2 text-primary p-0 -translate-x-1/2 transition-all duration-500 group-hover:-rotate-6 group-hover:scale-125">
                     {item.icon}
                   </CardHeader>
